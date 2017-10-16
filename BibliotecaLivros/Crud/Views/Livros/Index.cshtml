@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*Botao para a pagina de Create*@
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        Novo Livro
+    </a>
+</p>
+
+<table id="gridDados">
+    <thead>
+        <tr>
+            <th data-colum-id="Titulo">Título</th>
+            <th data-colum-id="Autor">Autor</th>
+            <th data-colum-id="AnoEdicao">Ano da Edição</th>
+            <th data-colum-id="Valor">Valor</th>           
+        </tr>
+    </thead>
+</table>
+  
+@section scripts{
+    <script src="~/Scripts/jquery.bootgrid.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(configurarControles);
+
+        function configurarControles() {
+
+            $("#gridDados").bootgrid(
+                {
+                    ajax: true,
+                    url: "@Url.Action("Listar")"
+                });
+        }
+
+        </script>
+}
