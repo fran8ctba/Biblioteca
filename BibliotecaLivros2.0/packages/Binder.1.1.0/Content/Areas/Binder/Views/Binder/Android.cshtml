@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>IOS</title>
+    <style type="text/css">
+        
+    </style>
+    <link rel="stylesheet" type="text/css" href="~/Areas/Binder/Content/prism.css" />
+    @section scripts {
+        <script type="text/javascript" src="~/Areas/Binder/Scripts/prism.js"></script>
+
+    }
+</head>
+<body>
+    <div style="text-align:center">
+        <img src="~/Areas/Binder/Images/android-icon.png" width="100" height="100" style="display: block; margin: auto;" />
+        <h1>Android Data Layer</h1>
+        <h5>Binder generates an Android data layer complete with mock test data for locally supplied object testing. Click a download link below or read the docs for a better understand of Binder's Android implementation</h5>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <a class="btn btn-success" href="~/api/Binder/distribution?platform=android" role="button">Android</a>
+            <div class="btn-subtitle">
+                Download Binder for Android
+            </div>
+        </div>
+
+    </div>
+    <hr />
+    <div>
+        <h3>How to use Binder</h3>
+        <div>
+            Below is a tutorial for how to use Binder. Please follow the instructions below for binding to this web service.
+        </div>
+
+        <!--Step 1-->
+        <div class="tutorial-section">
+            <h4 class="tutorial-header">Step 1 - Download Files</h4>
+            <div><b>Download</b> the binder files to be added to your project.</div>
+        </div>
+
+        <!--Step 2-->
+        <div class="tutorial-section">
+            <h4 class="tutorial-header">Step 2 - Add Files to Your Project</h4>
+            <div><b>Unzip</b> the Binder package and find the unzipped folder. Drag the Binder folder into your app and rearrange the files as necessary.</div>
+            <div><b>Correct the package names</b> for each Binder file if they are incorrect.</div>
+        </div>
+
+        <!--Step 3-->
+        <div class="tutorial-section">
+            <h4 class="tutorial-header">Step 3 - Resolve Import Errors</h4>
+            <div><b>Import</b> the neccessary classes in each file to resolve dependency issues. Binder cannot do this automatically as we do not know your package names.</div>
+        </div>
+
+        <!--Step 4-->
+        <div class="tutorial-section">
+            <h4 class="tutorial-header">Step 4 - Usage</h4>
+            <div>Let's take a look at a few sample calls using the generated binder methods. Below are a few methods of various types:</div>
+            <br />
+            <h4>JSON Request</h4>
+            <pre class="language-java>
+                <code class=" language-java">
+//Make request
+DataSingleton.sharedInstance().editUser(editUser, new Response.Listener<riseuser>() {
+    @@Override
+    public void onResponse(RISEUser response) {
+                            //Do work with response
+        }
+    },
+    new Response.ErrorListener() {
+        @@Override
+        public void onErrorResponse(VolleyError error) {
+            //Handle Error
+        }
+    }
+});
+                </code>
+            </pre>
+        </div>
+</body>
+</html>

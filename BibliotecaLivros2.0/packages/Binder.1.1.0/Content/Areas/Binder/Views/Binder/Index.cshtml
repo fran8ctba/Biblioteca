@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        .title {
+            font-weight:800;
+            color:#555555;
+        }
+    </style>
+    <title>Binder</title>
+</head>
+<div style="text-align:center">
+    <h2>Binder</h2>
+    <h5>Binder is a utility for converting Web API 2 controllers to functional data layers on other platforms, saving you time, money, and lots of headaches.</h5>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <a href="~/Binder/Binder/IOS">
+            <img src="~/Areas/Binder/Images/apple.jpg" width="170" height="170" style="display: block; margin: auto;" />
+            <div class="title" style="text-align:center">iOS</div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="~/Binder/Binder/Android">
+            <img src="~/Areas/Binder/Images/android-icon.png" width="170" height="170" style="display: block; margin: auto;" />
+            <div class="title" style="text-align:center">Android</div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="~/Binder/Binder/jquery">
+            <img src="~/Areas/Binder/Images/jquery_logo.jpg" width="170" height="170" style="display: block; margin: auto;" />
+            <div class="title" style="text-align:center">jQuery</div>
+        </a>
+    </div>
+</div>
+
+
+<hr />
+<div>
+    <h3>Installation Notes</h3>
+    <div>
+        Below are a few notes on installation and potential pitfalls
+    </div>
+
+    <!--Step 1-->
+    <div class="tutorial-section">
+        <h4 class="tutorial-header">Binder w/ Authentication</h4>
+        <div>In many cases, you will use Binder as a publicly accesssible portion on an otherwise authenticated site. In this case, you need to allow Binder others access to the resources of the Binder Area. In order to do this, copy and paste the following into your web config.</div>
+        <pre class="language-xml">
+                <code class=" language-xml">
+    &lt;location path="binder"&gt;
+    &lt;system.web&gt;
+      &lt;authorization&gt;
+        &lt;allow users="*" /&gt;
+      &lt;/authorization&gt;
+    &lt;/system.web&gt;
+  &lt;/location&gt;
+  &lt;location path="areas/binder"&gt;
+    &lt;system.web&gt;
+      &lt;authorization&gt;
+        &lt;allow users="*" /&gt;
+      &lt;/authorization&gt;
+    &lt;/system.web&gt;
+  &lt;/location&gt;
+                </code>
+            </pre>
+    </div>

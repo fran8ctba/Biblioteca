@@ -1,0 +1,25 @@
+﻿/*BINDER ATTRIBUTES*/
+.btn {
+            margin: auto;
+            width: 60%;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .btn-subtitle {
+            color: #555555;
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
+
+        .tutorial-header {
+            color: #39b3d7;
+            ;
+        }
+
+        .tutorial-section {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }

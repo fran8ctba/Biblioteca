@@ -1,0 +1,1 @@
+C:\Users\Fran\Documents\Visual Studio 2017\Projects\Solution1\WebApplication1\obj\Debug\DemoCRUD.csprojResolveAssemblyReference.cache

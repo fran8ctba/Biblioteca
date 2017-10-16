@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>IOS</title>
+</head>
+<body>
+    <div style="text-align:center">
+        <img src="~/Areas/Binder/Images/apple.jpg" width="100" height="100" style="display: block; margin: auto;" />
+        <h1>iOS Data Layer</h1>
+        <h5>Binder generates an iOS data layer complete with mock test data for locally supplied object testing. Click a download link below or read the docs for a better understand of Binder's iOS implementation</h5>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a class="btn btn-info" href="~/api/Binder/distribution?platform=objc" role="button">Objective-C</a>
+            <div class="btn-subtitle">
+                Download Binder for Objective-C
+            </div>
+        </div>
+        <div class="col-md-6">
+            <a class="btn btn-warning" href="~/api/Binder/distribution?platform=swift" role="button">Swift</a>
+            <div class="btn-subtitle">
+                Download Binder for Swift
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <!--Plugin-->
+    <h3 class="tutorial-header">Binder Xcode Plugin</h3>
+    <div>Binder's own Xcode plugin. Simply paste in your endpoint and binder will automatically download a reference.</div>
+    <div class="row">
+        <div class="col-md-6">
+            <a class="btn btn-info" href="https://github.com/HighBay/Binder-Xcode-Plugin" role="button" target="_blank">Plugin Docs/Install</a>
+            <div class="btn-subtitle">
+                View plugin docs and install procedures
+            </div>
+        </div>
+        <div class="col-md-6">
+            <a class="btn btn-info" href="https://github.com/HighBay/Binder-Xcode-Plugin/releases/download/v1.0.0/BinderPlugin.xcplugin.zip" role="button">Download Plugin</a>
+            <div class="btn-subtitle">
+                Download Xcode Plugin and get started!
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <!--How to use-->
+    <div>
+        <h3>How to use Binder</h3>
+        <div>
+            Below is a tutorial for how to use Binder. Please follow the instructions below for binding to this web service.
+        </div>
+
+        <!--Step 1-->
+        <div class="tutorial-section">
+            <h4 class="tutorial-header">Step 1 - Download Files</h4>
+            <div>Choose your language above (Objective-C or Swift) and <b>download</b> the binder files to be added to your project.</div>
+        </div>
+
+        <!--Step 2-->
+        <div class="tutorial-section">
+            <h4 class="tutorial-header">Step 2 - Add Files to Your Project</h4>
+            <h4>Swift</h4>
+            <div><b>Unzip</b> the Binder package and find the unzipped folder. Move your unzipped folder into the project directory. Then drag all files <b>except the Alamofire folder</b> into Xcode</div>
+            <br />
+            <div>Next, drag Alamofire.xcodeproj from the Alamofire folder into Xcode. Add Alamofire for iOS to the embedded binaries for your project. Be sure to remove any already existing Alamofire references from the binary.</div>
+        </div>
+
+
+        
+    </div>
+</body>
+</html>
