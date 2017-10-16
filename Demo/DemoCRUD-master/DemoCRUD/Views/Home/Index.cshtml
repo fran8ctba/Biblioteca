@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        @Html.Action("Listar", "Generos")
+    </div>
+    <div class="col-md-9">
+        <div class="row" id="livros">
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(configurarTelaPrincipal);
+
+        function configurarTelaPrincipal() {
+
+            $("a[data-action='ListBooks']").on("click", listarLivrosPorGenero);
+
+            listarLivrosPorGenero();
+
+        }
+
+        function listarLivrosPorGenero() {
+
+            var generoId = 0;
+
+            if ($(this).data("genero-id") != undefined) {
+
+                generoId = $(this).data("genero-id");
+            }
+
+            $("#livros").load("@Url.Action("ListarPorGenero", "Livros")", { id: generoId });
+        }
+    </script>
+}

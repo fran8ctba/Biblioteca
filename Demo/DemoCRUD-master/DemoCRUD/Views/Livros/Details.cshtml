@@ -1,0 +1,52 @@
+﻿@model DemoCRUD.Models.Livro
+
+@{
+    ViewBag.Title = "Detalhamento";
+}
+
+<h2><span class="glyphicon glyphicon-list"></span> Detalhamento</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Genero.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genero.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnoEdicao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnoEdicao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+
+    </dl>
+</div>

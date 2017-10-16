@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listar Livros</h2>
+
+<p>
+    <a href="javascript:void(0)" data-action="Create" class="btn btn-primary">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        Novo Livro
+    </a>
+</p>
+
+<table id="gridDados" class="table table-striped">
+    <thead>
+        <tr>
+            <th data-column-id="Titulo" data-order="asc">Título</th>
+            <th data-column-id="Autor">Autor</th>
+            <th data-column-id="AnoEdicao">Ano da Edição</th>
+            <th data-column-id="Valor" data-formatter="Dinheiro">Valor</th>
+            <th data-formatter="Acoes" data-sortable="false">Ações</th>
+        </tr>
+    </thead>
+</table> mki7
+
+@section scripts{
+
+    <script src="~/Scripts/toastr.js"></script>
+    @Scripts.Render("~/bundles/jquerybootgrid")
+    <script src="~/Scripts/projeto/ControlarGrid.js"></script>
+
+    <script type="text/javascript">
+
+        numeral.language("pt-br");
+
+        var controller = "Livros";
+
+        var urlListar = "@Url.Action("Listar")";
+
+        $(document).ready(configurarControles);
+
+    </script>
+
+}
+
+@section estilos{
+
+    <link href="~/Content/jquery.bootgrid.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+}
